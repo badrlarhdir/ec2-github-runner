@@ -1,4 +1,4 @@
-# On-demand self-hosted AWS EC2 runner for GitHub Actions
+# Badr On-demand self-hosted AWS EC2 runner for GitHub Actions
 
 
 [![awesome-runners](https://img.shields.io/badge/listed%20on-awesome--runners-blue.svg)](https://github.com/jonico/awesome-runners)
