@@ -30,6 +30,10 @@ inputs:
       VPC Subnet Id. The subnet should belong to the same VPC as the specified security group.
       This input is required if you use the 'start' mode.
     required: false
+  root-volume-size:
+     description: >-
+      The root volume needed for the ec2 instance.
+      required: false
   security-group-id:
     description: >-
       EC2 Security Group Id. 
