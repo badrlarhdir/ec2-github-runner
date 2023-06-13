@@ -44,15 +44,15 @@ async function startEc2Instance(label, githubRegistrationToken) {
     IamInstanceProfile: { Name: config.input.iamRoleName },
     TagSpecifications: config.tagSpecifications,
     BlockDeviceMappings: [
-    {
-      DeviceName: '/dev/sda1',
-      Ebs: {
-        VolumeSize: config.input.rootVolumeSize,
-        VolumeType: 'gp2',
-        DeleteOnTermination: true,
+      {
+        DeviceName: '/dev/sda1',
+        Ebs: {
+          VolumeSize: config.input.rootVolumeSize,
+          VolumeType: 'gp3',
+          DeleteOnTermination: true,
+        },
       },
-    },
-  ],
+    ],
   };
 
   try {
